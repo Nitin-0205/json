@@ -1,0 +1,1135 @@
+{
+    "INProfileResponse": {
+      "Header": {
+        "SystemCode": 0,
+        "MessageText": "",
+        "ReportDate": 20230314,
+        "ReportTime": 121715
+      },
+      "UserMessage": {
+        "UserMessageText": "Normal Response"
+      },
+      "CreditProfileHeader": {
+        "Enquiry_Username": "bureau_report__1finance_em",
+        "ReportDate": 20230314,
+        "ReportTime": 121715,
+        "Version": "V2.4",
+        "ReportNumber": 1678776434928,
+        "Subscriber": "",
+        "Subscriber_Name": "Bureau Disclosure Report with Credit Caps"
+      },
+      "Current_Application": {
+        "Current_Application_Details": {
+          "Enquiry_Reason": 6,
+          "Finance_Purpose": "",
+          "Amount_Financed": 0,
+          "Duration_Of_Agreement": 0,
+          "Current_Applicant_Details": {
+            "Last_Name": "battini",
+            "First_Name": "Bharath",
+            "Middle_Name1": "",
+            "Middle_Name2": "",
+            "Middle_Name3": "",
+            "Gender_Code": 1,
+            "IncomeTaxPan": "CHIPB2816E",
+            "PAN_Issue_Date": "",
+            "PAN_Expiration_Date": "",
+            "Passport_number": "",
+            "Passport_Issue_Date": "",
+            "Passport_Expiration_Date": "",
+            "Voter_s_Identity_Card": "",
+            "Voter_ID_Issue_Date": "",
+            "Voter_ID_Expiration_Date": "",
+            "Driver_License_Number": "",
+            "Driver_License_Issue_Date": "",
+            "Driver_License_Expiration_Date": "",
+            "Ration_Card_Number": "",
+            "Ration_Card_Issue_Date": "",
+            "Ration_Card_Expiration_Date": "",
+            "Universal_ID_Number": "",
+            "Universal_ID_Issue_Date": "",
+            "Universal_ID_Expiration_Date": "",
+            "Date_Of_Birth_Applicant": 19971207,
+            "Telephone_Number_Applicant_1st": "",
+            "Telephone_Extension": "",
+            "Telephone_Type": "",
+            "MobilePhoneNumber": 8898782353,
+            "EMailId": "bbharath712@gmail.com"
+          },
+          "Current_Other_Details": {
+            "Income": 0,
+            "Marital_Status": "",
+            "Employment_Status": "",
+            "Time_with_Employer": "",
+            "Number_of_Major_Credit_Card_Held": ""
+          },
+          "Current_Applicant_Address_Details": {
+            "FlatNoPlotNoHouseNo": "ROOM NO 13 SARVAMMA CHAWL SAMBHAJI CHAUK NEW MILL",
+            "BldgNoSocietyName": "ROAD KURLA W",
+            "RoadNoNameAreaLocality": "",
+            "City": "Mumbai",
+            "Landmark": "",
+            "State": 27,
+            "PINCode": 400070,
+            "Country_Code": "IB"
+          },
+          "Current_Applicant_Additional_AddressDetails": ""
+        }
+      },
+      "CAIS_Account": {
+        "CAIS_Summary": {
+          "Credit_Account": {
+            "CreditAccountTotal": 3,
+            "CreditAccountActive": 2,
+            "CreditAccountDefault": 0,
+            "CreditAccountClosed": 1,
+            "CADSuitFiledCurrentBalance": 0
+          },
+          "Total_Outstanding_Balance": {
+            "Outstanding_Balance_Secured": 0,
+            "Outstanding_Balance_Secured_Percentage": 0,
+            "Outstanding_Balance_UnSecured": 0,
+            "Outstanding_Balance_UnSecured_Percentage": 0,
+            "Outstanding_Balance_All": 0
+          }
+        },
+        "CAIS_Account_DETAILS": [
+          {
+            "Identification_Number": "PVTHDFC007",
+            "Subscriber_Name": "HDFC Bank Ltd",
+            "Account_Number": "XXXXXXXXXXXXXXX9466",
+            "Portfolio_Type": "R",
+            "Account_Type": 10,
+            "Open_Date": 20180925,
+            "Credit_Limit_Amount": 567,
+            "Highest_Credit_or_Original_Loan_Amount": 28742,
+            "Terms_Duration": "",
+            "Terms_Frequency": "",
+            "Scheduled_Monthly_Payment_Amount": "",
+            "Account_Status": 11,
+            "Payment_Rating": 0,
+            "Payment_History_Profile": "000000000000000000000000000000000?00",
+            "Special_Comment": "",
+            "Current_Balance": 0,
+            "Amount_Past_Due": 0,
+            "Original_Charge_Off_Amount": "",
+            "Date_Reported": 20230131,
+            "Date_of_First_Delinquency": "",
+            "Date_Closed": 3456,
+            "Date_of_Last_Payment": 20230117,
+            "SuitFiledWillfulDefaultWrittenOffStatus": "",
+            "SuitFiled_WilfulDefault": "",
+            "Written_off_Settled_Status": "",
+            "Value_of_Credits_Last_Month": "",
+            "Occupation_Code": "S",
+            "Settlement_Amount": "",
+            "Value_of_Collateral": 4567,
+            "Type_of_Collateral": "",
+            "Written_Off_Amt_Total": "",
+            "Written_Off_Amt_Principal": "",
+            "Rate_of_Interest": "",
+            "Repayment_Tenure": 0,
+            "Promotional_Rate_Flag": "",
+            "Income": "",
+            "Income_Indicator": "",
+            "Income_Frequency_Indicator": "",
+            "DefaultStatusDate": "",
+            "LitigationStatusDate": "",
+            "WriteOffStatusDate": "",
+            "DateOfAddition": 20180930,
+            "CurrencyCode": "INR",
+            "Subscriber_comments": "",
+            "Consumer_comments": "",
+            "AccountHoldertypeCode": 1,
+            "CAIS_Account_History": [
+              {
+                "Year": 2023,
+                "Month": 1,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 12,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 11,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 10,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 9,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 8,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 7,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 6,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 5,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 4,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 3,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 2,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 1,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 12,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 11,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 10,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 9,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 8,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 7,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 6,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 5,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 4,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 3,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 2,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2021,
+                "Month": 1,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 12,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 11,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 10,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 9,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 8,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 7,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 6,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 5,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 4,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 2,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2020,
+                "Month": 1,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 12,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 11,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 10,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 9,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 8,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 7,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 6,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 5,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 4,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 3,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 2,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2019,
+                "Month": 1,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2018,
+                "Month": 12,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2018,
+                "Month": 11,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2018,
+                "Month": 10,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2018,
+                "Month": 9,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              }
+            ],
+            "CAIS_Holder_Details": {
+              "Surname_Non_Normalized": "BHARATH RAGHURAMULU",
+              "First_Name_Non_Normalized": "BHATTHINI",
+              "Middle_Name_1_Non_Normalized": "BHARATH",
+              "Middle_Name_2_Non_Normalized": "",
+              "Middle_Name_3_Non_Normalized": "",
+              "Alias": "",
+              "Gender_Code": 1,
+              "Income_TAX_PAN": "",
+              "Passport_Number": "",
+              "Voter_ID_Number": "",
+              "Date_of_birth": 19971207
+            },
+            "CAIS_Holder_Address_Details": {
+              "First_Line_Of_Address_non_normalized": "ROOM NO 13 SARVAMMA CHAWL",
+              "Second_Line_Of_Address_non_normalized": "SAMBHAJI CHAUK NEW MILL ROAD",
+              "Third_Line_Of_Address_non_normalized": "KURLA (W)",
+              "City_non_normalized": "",
+              "Fifth_Line_Of_Address_non_normalized": "",
+              "State_non_normalized": 27,
+              "ZIP_Postal_Code_non_normalized": 400070,
+              "CountryCode_non_normalized": "IB",
+              "Address_indicator_non_normalized": 2,
+              "Residence_code_non_normalized": ""
+            },
+            "CAIS_Holder_Phone_Details": {
+              "Telephone_Number": "",
+              "Telephone_Type": 1,
+              "Telephone_Extension": "",
+              "Mobile_Telephone_Number": "XXXXX82353",
+              "FaxNumber": "",
+              "EMailId": "BXXXXXXXXX2@GXXXX.COM"
+            },
+            "CAIS_Holder_ID_Details": {
+              "Income_TAX_PAN": "CHIPB2816E",
+              "PAN_Issue_Date": "",
+              "PAN_Expiration_Date": "",
+              "Passport_Number": "",
+              "Passport_Issue_Date": "",
+              "Passport_Expiration_Date": "",
+              "Voter_ID_Number": "",
+              "Voter_ID_Issue_Date": "",
+              "Voter_ID_Expiration_Date": "",
+              "Driver_License_Number": "",
+              "Driver_License_Issue_Date": "",
+              "Driver_License_Expiration_Date": "",
+              "Ration_Card_Number": "",
+              "Ration_Card_Issue_Date": "",
+              "Ration_Card_Expiration_Date": "",
+              "Universal_ID_Number": "",
+              "Universal_ID_Issue_Date": "",
+              "Universal_ID_Expiration_Date": "",
+              "EMailId": "BXXXXXXXXX2@GXXXX.COM"
+            }
+          },
+          {
+            "Identification_Number": "PVTHDFC007",
+            "Subscriber_Name": "HDFC Bank Ltd",
+            "Account_Number": "XXXXX0780",
+            "Portfolio_Type": "I",
+            "Account_Type": 6,
+            "Open_Date": 20211025,
+            "Credit_Limit_Amount": 56,
+            "Highest_Credit_or_Original_Loan_Amount": 16141,
+            "Terms_Duration": "",
+            "Terms_Frequency": "",
+            "Scheduled_Monthly_Payment_Amount": "",
+            "Account_Status": 13,
+            "Payment_Rating": 0,
+            "Payment_History_Profile": "0000000?????????????????????????????",
+            "Special_Comment": "",
+            "Current_Balance": 0,
+            "Amount_Past_Due": 0,
+            "Original_Charge_Off_Amount": "",
+            "Date_Reported": 20220531,
+            "Date_of_First_Delinquency": "",
+            "Date_Closed": 20220505,
+            "Date_of_Last_Payment": 20220505,
+            "SuitFiledWillfulDefaultWrittenOffStatus": "",
+            "SuitFiled_WilfulDefault": "",
+            "Written_off_Settled_Status": "",
+            "Value_of_Credits_Last_Month": "",
+            "Occupation_Code": "",
+            "Settlement_Amount": "",
+            "Value_of_Collateral": 0,
+            "Type_of_Collateral": "",
+            "Written_Off_Amt_Total": "",
+            "Written_Off_Amt_Principal": "",
+            "Rate_of_Interest": "",
+            "Repayment_Tenure": 0,
+            "Promotional_Rate_Flag": "",
+            "Income": "",
+            "Income_Indicator": "",
+            "Income_Frequency_Indicator": "",
+            "DefaultStatusDate": "",
+            "LitigationStatusDate": "",
+            "WriteOffStatusDate": "",
+            "DateOfAddition": 20211031,
+            "CurrencyCode": "INR",
+            "Subscriber_comments": "",
+            "Consumer_comments": "",
+            "AccountHoldertypeCode": 1,
+            "CAIS_Account_History": [
+              {
+                "Year": 2022,
+                "Month": 5,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              },
+              {
+                "Year": 2022,
+                "Month": 4,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              },
+              {
+                "Year": 2022,
+                "Month": 3,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              },
+              {
+                "Year": 2022,
+                "Month": 2,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              },
+              {
+                "Year": 2022,
+                "Month": 1,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              },
+              {
+                "Year": 2021,
+                "Month": 12,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              },
+              {
+                "Year": 2021,
+                "Month": 11,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              },
+              {
+                "Year": 2021,
+                "Month": 10,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "S"
+              }
+            ],
+            "CAIS_Holder_Details": {
+              "Surname_Non_Normalized": "BHARATH RAGHURAMULU",
+              "First_Name_Non_Normalized": "BATTINI",
+              "Middle_Name_1_Non_Normalized": "BHARATH",
+              "Middle_Name_2_Non_Normalized": "",
+              "Middle_Name_3_Non_Normalized": "",
+              "Alias": "",
+              "Gender_Code": 1,
+              "Income_TAX_PAN": "CHIPB2816E",
+              "Passport_Number": "",
+              "Voter_ID_Number": "",
+              "Date_of_birth": 19971207
+            },
+            "CAIS_Holder_Address_Details": {
+              "First_Line_Of_Address_non_normalized": "ROOM NO 13 SARVAMMA CHAWL SAMBHAJI CHAUK",
+              "Second_Line_Of_Address_non_normalized": "NEW",
+              "Third_Line_Of_Address_non_normalized": "",
+              "City_non_normalized": "",
+              "Fifth_Line_Of_Address_non_normalized": "",
+              "State_non_normalized": 27,
+              "ZIP_Postal_Code_non_normalized": 400070,
+              "CountryCode_non_normalized": "IB",
+              "Address_indicator_non_normalized": 2,
+              "Residence_code_non_normalized": ""
+            },
+            "CAIS_Holder_Phone_Details": {
+              "Telephone_Number": "",
+              "Telephone_Type": 1,
+              "Telephone_Extension": "",
+              "Mobile_Telephone_Number": "XXXXX82353",
+              "FaxNumber": "",
+              "EMailId": "BXXXXXXXXX2@GXXXX.COM"
+            },
+            "CAIS_Holder_ID_Details": {
+              "Income_TAX_PAN": "CHIPB2816E",
+              "PAN_Issue_Date": "",
+              "PAN_Expiration_Date": "",
+              "Passport_Number": "",
+              "Passport_Issue_Date": "",
+              "Passport_Expiration_Date": "",
+              "Voter_ID_Number": "",
+              "Voter_ID_Issue_Date": "",
+              "Voter_ID_Expiration_Date": "",
+              "Driver_License_Number": "",
+              "Driver_License_Issue_Date": "",
+              "Driver_License_Expiration_Date": "",
+              "Ration_Card_Number": "",
+              "Ration_Card_Issue_Date": "",
+              "Ration_Card_Expiration_Date": "",
+              "Universal_ID_Number": "",
+              "Universal_ID_Issue_Date": "",
+              "Universal_ID_Expiration_Date": "",
+              "EMailId": ""
+            }
+          },
+          {
+            "Identification_Number": "PVTKOTMH03",
+            "Subscriber_Name": "Kotak Mahindra Bank Limited",
+            "Account_Number": "XXXXXXXXXXXX9781",
+            "Portfolio_Type": "R",
+            "Account_Type": 10,
+            "Open_Date": 20220407,
+            "Credit_Limit_Amount": 35000,
+            "Highest_Credit_or_Original_Loan_Amount": 0,
+            "Terms_Duration": "",
+            "Terms_Frequency": "",
+            "Scheduled_Monthly_Payment_Amount": "",
+            "Account_Status": 11,
+            "Payment_Rating": 0,
+            "Payment_History_Profile": "000000000???????????????????????????",
+            "Special_Comment": "",
+            "Current_Balance": 0,
+            "Amount_Past_Due": 0,
+            "Original_Charge_Off_Amount": "",
+            "Date_Reported": 20230131,
+            "Date_of_First_Delinquency": "",
+            "Date_Closed": 456,
+            "Date_of_Last_Payment": 19000101,
+            "SuitFiledWillfulDefaultWrittenOffStatus": "",
+            "SuitFiled_WilfulDefault": "",
+            "Written_off_Settled_Status": "",
+            "Value_of_Credits_Last_Month": "",
+            "Occupation_Code": "",
+            "Settlement_Amount": "",
+            "Value_of_Collateral": 456,
+            "Type_of_Collateral": "",
+            "Written_Off_Amt_Total": "",
+            "Written_Off_Amt_Principal": "",
+            "Rate_of_Interest": "",
+            "Repayment_Tenure": 0,
+            "Promotional_Rate_Flag": "",
+            "Income": "",
+            "Income_Indicator": "",
+            "Income_Frequency_Indicator": "",
+            "DefaultStatusDate": "",
+            "LitigationStatusDate": "",
+            "WriteOffStatusDate": "",
+            "DateOfAddition": 20220430,
+            "CurrencyCode": "INR",
+            "Subscriber_comments": "",
+            "Consumer_comments": "",
+            "AccountHoldertypeCode": 1,
+            "CAIS_Account_History": [
+              {
+                "Year": 2023,
+                "Month": 1,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 12,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 11,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 10,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 9,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 8,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 7,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 6,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 5,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              },
+              {
+                "Year": 2022,
+                "Month": 4,
+                "Days_Past_Due": 0,
+                "Asset_Classification": "?"
+              }
+            ],
+            "CAIS_Holder_Details": {
+              "Surname_Non_Normalized": "BHARATH  RAGHU RAMULU",
+              "First_Name_Non_Normalized": "BHATTHINI",
+              "Middle_Name_1_Non_Normalized": "BHARATH",
+              "Middle_Name_2_Non_Normalized": "",
+              "Middle_Name_3_Non_Normalized": "",
+              "Alias": "",
+              "Gender_Code": 1,
+              "Income_TAX_PAN": "CHIPB2816E",
+              "Passport_Number": "",
+              "Voter_ID_Number": "",
+              "Date_of_birth": 19971207
+            },
+            "CAIS_Holder_Address_Details": [
+              {
+                "First_Line_Of_Address_non_normalized": "ROOM NO. 13, SARVAMMA CHAWL SA MBHAJI",
+                "Second_Line_Of_Address_non_normalized": "CHAUK, NEW MILL ROAD  KURLA (W) MUMBAI",
+                "Third_Line_Of_Address_non_normalized": "",
+                "City_non_normalized": "",
+                "Fifth_Line_Of_Address_non_normalized": "",
+                "State_non_normalized": 27,
+                "ZIP_Postal_Code_non_normalized": 400070,
+                "CountryCode_non_normalized": "IB",
+                "Address_indicator_non_normalized": 1,
+                "Residence_code_non_normalized": ""
+              },
+              {
+                "First_Line_Of_Address_non_normalized": "ROOM NO :13, SARVAMMA CHAWL SAMNBHAJI",
+                "Second_Line_Of_Address_non_normalized": "CHOWK,N.M. ROAD SAMBHAJI CHOWK MAIDAN,",
+                "Third_Line_Of_Address_non_normalized": "KURLA -W MUMBAI",
+                "City_non_normalized": "",
+                "Fifth_Line_Of_Address_non_normalized": "",
+                "State_non_normalized": 27,
+                "ZIP_Postal_Code_non_normalized": 400070,
+                "CountryCode_non_normalized": "IB",
+                "Address_indicator_non_normalized": 1,
+                "Residence_code_non_normalized": ""
+              },
+              {
+                "First_Line_Of_Address_non_normalized": "SHREY CINEMA GHATKOPAR WEST  MUMBAI",
+                "Second_Line_Of_Address_non_normalized": "",
+                "Third_Line_Of_Address_non_normalized": "",
+                "City_non_normalized": "",
+                "Fifth_Line_Of_Address_non_normalized": "",
+                "State_non_normalized": 27,
+                "ZIP_Postal_Code_non_normalized": 400086,
+                "CountryCode_non_normalized": "IB",
+                "Address_indicator_non_normalized": 1,
+                "Residence_code_non_normalized": ""
+              }
+            ],
+            "CAIS_Holder_Phone_Details": {
+              "Telephone_Number": "",
+              "Telephone_Type": 1,
+              "Telephone_Extension": "",
+              "Mobile_Telephone_Number": "XXXXX82353",
+              "FaxNumber": "",
+              "EMailId": "BXXXXXXXXX2@GXXXX.COM"
+            },
+            "CAIS_Holder_ID_Details": {
+              "Income_TAX_PAN": "CHIPB2816E",
+              "PAN_Issue_Date": "",
+              "PAN_Expiration_Date": "",
+              "Passport_Number": "",
+              "Passport_Issue_Date": "",
+              "Passport_Expiration_Date": "",
+              "Voter_ID_Number": "",
+              "Voter_ID_Issue_Date": "",
+              "Voter_ID_Expiration_Date": "",
+              "Driver_License_Number": "",
+              "Driver_License_Issue_Date": "",
+              "Driver_License_Expiration_Date": "",
+              "Ration_Card_Number": "",
+              "Ration_Card_Issue_Date": "",
+              "Ration_Card_Expiration_Date": "",
+              "Universal_ID_Number": "",
+              "Universal_ID_Issue_Date": "",
+              "Universal_ID_Expiration_Date": "",
+              "EMailId": ""
+            }
+          }
+        ]
+      },
+      "Match_result": {
+        "Exact_match": "Y"
+      },
+      "TotalCAPS_Summary": {
+        "TotalCAPSLast7Days": 0,
+        "TotalCAPSLast30Days": 0,
+        "TotalCAPSLast90Days": 0,
+        "TotalCAPSLast180Days": 0
+      },
+      "CAPS": {
+        "CAPS_Summary": {
+          "CAPSLast7Days": 0,
+          "CAPSLast30Days": 0,
+          "CAPSLast90Days": 0,
+          "CAPSLast180Days": 0
+        },
+        "CAPS_Application_Details": [
+          {
+            "Subscriber_code": "NBFZENL172",
+            "Subscriber_Name": "CapFloat Financial Services Pvt Ltd",
+            "Date_of_Request": 20200524,
+            "ReportTime": 121715,
+            "ReportNumber": 1590298366502,
+            "Enquiry_Reason": 6,
+            "Finance_Purpose": 22,
+            "Amount_Financed": 60000,
+            "Duration_Of_Agreement": 12,
+            "CAPS_Applicant_Details": {
+              "Last_Name": "BHATTHINI",
+              "First_Name": "BHARATH RAGHU RAMULU",
+              "Middle_Name1": "RAGHU",
+              "Middle_Name2": "RAMULU",
+              "Middle_Name3": "",
+              "Gender_Code": 2,
+              "IncomeTaxPan": "CHIPB2816E",
+              "PAN_Issue_Date": "",
+              "PAN_Expiration_Date": "",
+              "Passport_number": "",
+              "Passport_Issue_Date": "",
+              "Passport_Expiration_Date": "",
+              "Voter_s_Identity_Card": "",
+              "Voter_ID_Issue_Date": "",
+              "Voter_ID_Expiration_Date": "",
+              "Driver_License_Number": "",
+              "Driver_License_Issue_Date": "",
+              "Driver_License_Expiration_Date": "",
+              "Ration_Card_Number": "",
+              "Ration_Card_Issue_Date": "",
+              "Ration_Card_Expiration_Date": "",
+              "Universal_ID_Number": "",
+              "Universal_ID_Issue_Date": "",
+              "Universal_ID_Expiration_Date": "",
+              "Date_Of_Birth_Applicant": 19971207,
+              "Telephone_Number_Applicant_1st": "XXXXXX2353",
+              "Telephone_Extension": "",
+              "Telephone_Type": 0,
+              "EMailId": ""
+            },
+            "CAPS_Other_Details": {
+              "Income": "",
+              "Marital_Status": "",
+              "Employment_Status": "",
+              "Time_with_Employer": "",
+              "Number_of_Major_Credit_Card_Held": ""
+            },
+            "CAPS_Applicant_Address_Details": {
+              "FlatNoPlotNoHouseNo": "Room No. 13",
+              "BldgNoSocietyName": "Sarvamma Chawl Sambhaji Chauk",
+              "RoadNoNameAreaLocality": "New Mill Road  Room No. 13",
+              "City": "Mumbai",
+              "Landmark": "",
+              "State": 30,
+              "PINCode": 400070,
+              "Country_Code": "IB"
+            },
+            "CAPS_Applicant_Additional_Address_Details": ""
+          },
+          {
+            "Subscriber_code": "11728",
+            "Subscriber_Name": "DBS Bank Ltd",
+            "Date_of_Request": 20200203,
+            "ReportTime": 121715,
+            "ReportNumber": 1580728218139,
+            "Enquiry_Reason": 99,
+            "Finance_Purpose": 99,
+            "Amount_Financed": 676,
+            "Duration_Of_Agreement": 0,
+            "CAPS_Applicant_Details": {
+              "Last_Name": "",
+              "First_Name": "",
+              "Middle_Name1": "",
+              "Middle_Name2": "",
+              "Middle_Name3": "",
+              "Gender_Code": "",
+              "IncomeTaxPan": "CHIPB2816E",
+              "PAN_Issue_Date": "",
+              "PAN_Expiration_Date": "",
+              "Passport_number": "",
+              "Passport_Issue_Date": "",
+              "Passport_Expiration_Date": "",
+              "Voter_s_Identity_Card": "",
+              "Voter_ID_Issue_Date": "",
+              "Voter_ID_Expiration_Date": "",
+              "Driver_License_Number": "",
+              "Driver_License_Issue_Date": "",
+              "Driver_License_Expiration_Date": "",
+              "Ration_Card_Number": "",
+              "Ration_Card_Issue_Date": "",
+              "Ration_Card_Expiration_Date": "",
+              "Universal_ID_Number": "",
+              "Universal_ID_Issue_Date": "",
+              "Universal_ID_Expiration_Date": "",
+              "Date_Of_Birth_Applicant": "",
+              "Telephone_Type": 1,
+              "MobilePhoneNumber": "XXXXX82353",
+              "EMailId": "BXXXXXXXXX2@GXXXX.COM"
+            },
+            "CAPS_Other_Details": {
+              "Income": "",
+              "Marital_Status": "",
+              "Employment_Status": "",
+              "Time_with_Employer": "",
+              "Number_of_Major_Credit_Card_Held": ""
+            },
+            "CAPS_Applicant_Address_Details": {
+              "FlatNoPlotNoHouseNo": "ROOM NO.13,SARVAMMA CHAWL,SAMBHAJI CHOWK, NEW MILL ROAD,KURLA-WEST",
+              "BldgNoSocietyName": "",
+              "RoadNoNameAreaLocality": "",
+              "City": "MUMBAI",
+              "Landmark": "SAMBHAJI  CHOWK,",
+              "State": 27,
+              "PINCode": 400070,
+              "Country_Code": "IB"
+            },
+            "CAPS_Applicant_Additional_Address_Details": ""
+          },
+          {
+            "Subscriber_code": "51334",
+            "Subscriber_Name": "IVL Finance Ltd",
+            "Date_of_Request": 20190221,
+            "ReportTime": 121715,
+            "ReportNumber": 1550738455903,
+            "Enquiry_Reason": 13,
+            "Finance_Purpose": 99,
+            "Amount_Financed": 100000,
+            "Duration_Of_Agreement": 24,
+            "CAPS_Applicant_Details": {
+              "Last_Name": "Bhatthini",
+              "First_Name": "Bharath",
+              "Middle_Name1": "",
+              "Middle_Name2": "",
+              "Middle_Name3": "",
+              "Gender_Code": 1,
+              "IncomeTaxPan": "CHIPB2816E",
+              "PAN_Issue_Date": "",
+              "PAN_Expiration_Date": "",
+              "Passport_number": "",
+              "Passport_Issue_Date": "",
+              "Passport_Expiration_Date": "",
+              "Voter_s_Identity_Card": "",
+              "Voter_ID_Issue_Date": "",
+              "Voter_ID_Expiration_Date": "",
+              "Driver_License_Number": "",
+              "Driver_License_Issue_Date": "",
+              "Driver_License_Expiration_Date": "",
+              "Ration_Card_Number": "",
+              "Ration_Card_Issue_Date": "",
+              "Ration_Card_Expiration_Date": "",
+              "Universal_ID_Number": "",
+              "Universal_ID_Issue_Date": "",
+              "Universal_ID_Expiration_Date": "",
+              "Date_Of_Birth_Applicant": 19971207,
+              "Telephone_Type": 1,
+              "MobilePhoneNumber": "XXXXX82353",
+              "EMailId": "BXXXXXXXXX2@GXXXX.COM"
+            },
+            "CAPS_Other_Details": {
+              "Income": "",
+              "Marital_Status": "",
+              "Employment_Status": "",
+              "Time_with_Employer": "",
+              "Number_of_Major_Credit_Card_Held": ""
+            },
+            "CAPS_Applicant_Address_Details": {
+              "FlatNoPlotNoHouseNo": "Room no.13 Sarvamma Chawl Sambhaji Chowk New Mill Road Kurla West",
+              "BldgNoSocietyName": "Room no.13 Sarvamma Chawl Sambhaji Chowk New Mill Road Kurla West",
+              "RoadNoNameAreaLocality": "",
+              "City": "MUMBAI",
+              "Landmark": "SAMBHAJI  CHOWK",
+              "State": 27,
+              "PINCode": 400070,
+              "Country_Code": "IB"
+            },
+            "CAPS_Applicant_Additional_Address_Details": {
+              "FlatNoPlotNoHouseNo": "Room no.13 Sarvamma Chawl Sambhaji Chowk New Mill Road Kurla West",
+              "BldgNoSocietyName": "",
+              "RoadNoNameAreaLocality": "",
+              "City": "MUMBAI",
+              "Landmark": "SAMBHAJI  CHOWK",
+              "State": 27,
+              "PINCode": 400070,
+              "Country_Code": "IB"
+            }
+          },
+          {
+            "Subscriber_code": "PVTHDFC007",
+            "Subscriber_Name": "HDFC Bank Ltd",
+            "Date_of_Request": 20180921,
+            "ReportTime": 121715,
+            "ReportNumber": 1537498398100,
+            "Enquiry_Reason": 7,
+            "Finance_Purpose": 99,
+            "Amount_Financed": 1000,
+            "Duration_Of_Agreement": 3,
+            "CAPS_Applicant_Details": {
+              "Last_Name": "BHARATH RAGHURAMULU BHATTHINI",
+              "First_Name": "BHARATH",
+              "Middle_Name1": "BHARATH",
+              "Middle_Name2": "RAGHURAMULU",
+              "Middle_Name3": "",
+              "Gender_Code": 1,
+              "IncomeTaxPan": "CHIPB2816E",
+              "PAN_Issue_Date": "",
+              "PAN_Expiration_Date": "",
+              "Passport_number": "",
+              "Passport_Issue_Date": "",
+              "Passport_Expiration_Date": "",
+              "Voter_s_Identity_Card": "XXXXXXXXXX5827",
+              "Voter_ID_Issue_Date": "",
+              "Voter_ID_Expiration_Date": "",
+              "Driver_License_Number": "",
+              "Driver_License_Issue_Date": "",
+              "Driver_License_Expiration_Date": "",
+              "Ration_Card_Number": "",
+              "Ration_Card_Issue_Date": "",
+              "Ration_Card_Expiration_Date": "",
+              "Universal_ID_Number": "",
+              "Universal_ID_Issue_Date": "",
+              "Universal_ID_Expiration_Date": "",
+              "Date_Of_Birth_Applicant": 19971207,
+              "Telephone_Type": 1,
+              "MobilePhoneNumber": "XXXXX82353",
+              "EMailId": "BXXXXXXXXX2@GXXXX.COM"
+            },
+            "CAPS_Other_Details": {
+              "Income": "",
+              "Marital_Status": 1,
+              "Employment_Status": "",
+              "Time_with_Employer": "",
+              "Number_of_Major_Credit_Card_Held": ""
+            },
+            "CAPS_Applicant_Address_Details": {
+              "FlatNoPlotNoHouseNo": "ROOM NO 13 SARVAMMA CHAWL",
+              "BldgNoSocietyName": "",
+              "RoadNoNameAreaLocality": "",
+              "City": "MUMBAI",
+              "Landmark": "",
+              "State": 27,
+              "PINCode": 400070,
+              "Country_Code": "IB"
+            },
+            "CAPS_Applicant_Additional_Address_Details": ""
+          }
+        ]
+      },
+      "NonCreditCAPS": {
+        "NonCreditCAPS_Summary": {
+          "NonCreditCAPSLast7Days": 0,
+          "NonCreditCAPSLast30Days": 0,
+          "NonCreditCAPSLast90Days": 0,
+          "NonCreditCAPSLast180Days": 0
+        }
+      },
+      "SCORE": {
+        "BureauScore": 879,
+        "BureauScoreConfidLevel": "H"
+      }
+    }
+  }

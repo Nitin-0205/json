@@ -1,0 +1,235 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                               Int      @unique @default(autoincrement())
+  Last_Name                        String?
+  First_Name                       String?
+  Middle_Name1                     String?
+  Middle_Name2                     String?
+  Middle_Name3                     String?
+  Gender_Code                      Int?
+  IncomeTaxPan                     String   @unique
+  PAN_Issue_Date                   String?
+  PAN_Expiration_Date              String?
+  Passport_number                  String?
+  Passport_Issue_Date              String?
+  Passport_Expiration_Date         String?
+  Voter_s_Identity_Card            String?
+  Voter_ID_Issue_Date              String?
+  Voter_ID_Expiration_Date         String?
+  Driver_License_Number            String?
+  Driver_License_Issue_Date        String?
+  Driver_License_Expiration_Date   String?
+  Ration_Card_Number               String?
+  Ration_Card_Issue_Date           String?
+  Ration_Card_Expiration_Date      String?
+  Universal_ID_Number              String?
+  Universal_ID_Issue_Date          String?
+  Universal_ID_Expiration_Date     String?
+  Date_Of_Birth_Applicant          BigInt?
+  Telephone_Number_Applicant_1st   String?
+  Telephone_Extension              String?
+  Telephone_Type                   String?
+  MobilePhoneNumber                Decimal?
+  EMailId                          String?  @unique
+  Income                           Int?
+  Marital_Status                   String?
+  Employment_Status                String?
+  Time_with_Employer               String?
+  Number_of_Major_Credit_Card_Held String?
+
+  FlatNoPlotNoHouseNo       String?
+  BldgNoSocietyName         String?
+  RoadNoNameAreaLocality    String?
+  City                      String?
+  Landmark                  String?
+  State                     Int?
+  PINCode                   Int?
+  Country_Code              String?
+  Cust_Header               Header[]
+  Cust_Credit_Prof_Head     CreditProfileHeader[]
+  Current_Apps              Current_Application_Details[]
+  Cust_Score                score?
+  TotalCAPS                 TotalCAPS_Summary[]
+  CAPS_Application_Details  CAPS_Application_Details[]
+  Credit_Account            Credit_Account[]
+  Total_Outstanding_Balance Total_Outstanding_Balance[]
+  CAIS_Account              CAIS_Account[]
+  CAPS_Summary              CAPS_Summary?
+  Non_Cradet_CAPS_Summary   NonCreditCAPS_Summary?
+  scoreId                   Int?
+}
+
+model Header {
+  id          Int      @unique @default(autoincrement())
+  Customer    User     @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan String
+  SystemCode  Int?
+  MessageText String?
+  ReportDate  Decimal?
+  ReportTime  Decimal?
+}
+
+model CreditProfileHeader {
+  id               Int      @unique @default(autoincrement())
+  Customer         User     @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan      String   @unique
+  Enquiry_Username String?
+  ReportDate       Decimal?
+  ReportTime       Decimal?
+  Version          String?
+  ReportNumber     Decimal?
+  Subscriber       String?
+  Subscriber_Name  String?
+}
+
+model Current_Application_Details {
+  id                    Int     @unique @default(autoincrement())
+  Applicant             User    @relation(fields: [ApplicantPan], references: [IncomeTaxPan])
+  ApplicantPan          String
+  Enquiry_Reason        Int?
+  Finance_Purpose       String?
+  Amount_Financed       Int?
+  Duration_Of_Agreement Int?
+}
+
+model TotalCAPS_Summary {
+  Customer             User   @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan          String @unique
+  TotalCAPSLast7Days   Int?
+  TotalCAPSLast30Days  Int?
+  TotalCAPSLast90Days  Int?
+  TotalCAPSLast180Days Int?
+}
+
+model Credit_Account {
+  Customer                   User   @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan                String @unique
+  CreditAccountTotal         Int?
+  CreditAccountActive        Int?
+  CreditAccountDefault       Int?
+  CreditAccountClosed        Int?
+  CADSuitFiledCurrentBalance Int?
+}
+
+model Total_Outstanding_Balance {
+  Customer                                 User   @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan                              String @unique
+  Outstanding_Balance_Secured              Int?
+  Outstanding_Balance_Secured_Percentage   Int?
+  Outstanding_Balance_UnSecured            Int?
+  Outstanding_Balance_UnSecured_Percentage Int?
+  Outstanding_Balance_All                  Int?
+}
+
+model CAIS_Account {
+  Customer                                User                   @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan                             String
+  Identification_Number                   String                 @unique
+  Subscriber_Name                         String?
+  Account_Number                          String  @unique
+  Portfolio_Type                          String?
+  Account_Type                            Int?
+  Open_Date                               Int?
+  Credit_Limit_Amount                     Int?
+  Highest_Credit_or_Original_Loan_Amount  Int?
+  Terms_Duration                          String?
+  Terms_Frequency                         String?
+  Scheduled_Monthly_Payment_Amount        String?
+  Account_Status                          Int?
+  Payment_Rating                          Int?
+  Payment_History_Profile                 String?
+  Special_Comment                         String?
+  Current_Balance                         Int?
+  Amount_Past_Due                         Decimal?
+  Original_Charge_Off_Amount              String?
+  Date_Reported                           Int?
+  Date_of_First_Delinquency               String?
+  Date_Closed                             Decimal?
+  Date_of_Last_Payment                    Int?
+  SuitFiledWillfulDefaultWrittenOffStatus String?
+  SuitFiled_WilfulDefault                 String?
+  Written_off_Settled_Status              String?
+  Value_of_Credits_Last_Month             String?
+  Occupation_Code                         String?
+  Settlement_Amount                       String?
+  Value_of_Collateral                     Decimal?
+  Type_of_Collateral                      String?
+  Written_Off_Amt_Total                   String?
+  Written_Off_Amt_Principal               String?
+  Rate_of_Interest                        String?
+  Repayment_Tenure                        Int?
+  Promotional_Rate_Flag                   String
+  Income                                  String?
+  Income_Indicator                        String?
+  Income_Frequency_Indicator              String?
+  DefaultStatusDate                       String?
+  LitigationStatusDate                    String?
+  WriteOffStatusDate                      String?
+  DateOfAddition                          Int?
+  CurrencyCode                            String?
+  Subscriber_comments                     String?
+  Consumer_comments                       String?
+  AccountHoldertypeCode                   Int?
+  CAIS_Acct_His                           CAIS_Account_History[]
+}
+
+model CAIS_Account_History {
+  id                   Int          @unique @default(autoincrement())
+  CAIS_Acct            CAIS_Account @relation(fields: [Acct_Number], references: [Account_Number])
+  Acct_Number          String
+  Year                 Int?
+  Month                Int?
+  Days_Past_Due        Int?
+  Asset_Classification String?
+}
+
+model CAPS_Application_Details {
+  Customer              User    @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan           String
+  Subscriber_code       String  @unique
+  Subscriber_Name       String?
+  Date_of_Request       Decimal?
+  ReportTime            Decimal?
+  ReportNumber          Decimal?
+  Enquiry_Reason        Decimal?
+  Finance_Purpose       Decimal?
+  Amount_Financed       Decimal?
+  Duration_Of_Agreement Decimal?
+}
+
+model CAPS_Summary {
+  Customer        User   @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan     String @unique
+  CAPSLast7Days   Int?
+  CAPSLast30Days  Int?
+  CAPSLast90Days  Int?
+  CAPSLast180Days Int?
+}
+
+model NonCreditCAPS_Summary {
+  Customer                         User   @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan                      String @unique
+  NonCreditCAPS_SummaryLast7Days   Int?
+  NonCreditCAPS_SummaryLast30Days  Int?
+  NonCreditCAPS_SummaryLast90Days  Int?
+  NonCreditCAPS_SummaryLast180Days Int?
+}
+
+model score {
+  id                     Int     @unique @default(autoincrement())
+  Customer               User    @relation(fields: [CustomerPan], references: [IncomeTaxPan])
+  CustomerPan            String  @unique
+  BureauScore            Int?
+  BureauScoreConfidLevel String?
+}
