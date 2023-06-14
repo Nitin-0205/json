@@ -12,38 +12,38 @@ export class AppService {
   getdata() {
     return 'Hello World!';
   }
-  Client(dto: User) {
-    return dto;
-  }
-  ClientHead(dto: Headerdto) {
-    return dto;
-  }
-  ClientcredProfHead(dto: CreditProfHeadDto) {
-    return dto;
-  }
-  ClientCurrAppDetail(dto: CurrAppDetail) {
-    return dto
+  // Client(dto: User) {
+  //   return dto;
+  // }
+  // ClientHead(dto: Headerdto) {
+  //   return dto;
+  // }
+  // ClientcredProfHead(dto: CreditProfHeadDto) {
+  //   return dto;
+  // }
+  // ClientCurrAppDetail(dto: CurrAppDetail) {
+  //   return dto
 
-  }
-  nonCreditSummary(dto: nonCreditSummaryDto) {
-    return dto;
-  }
-  scoreDto(dto: scoreDto) {
-    return dto;
-  }
-  CAPS_SummaryDTOFun(dto:CAPS_SummaryDto){
-    return dto;
-  }
-  CAPS_App_DetDtofun(dto:CAPS_App_DetDto){
-    return dto;
-  }
-  TotCapSummaryPayDto(dto: Tot_cap_SummaryDto) {
-    return dto;
-  }
+  // }
+  // nonCreditSummary(dto: nonCreditSummaryDto) {
+  //   return dto;
+  // }
+  // scoreDto(dto: scoreDto) {
+  //   return dto;
+  // }
+  // CAPS_SummaryDTOFun(dto:CAPS_SummaryDto){
+  //   return dto;
+  // }
+  // CAPS_App_DetDtofun(dto:CAPS_App_DetDto){
+  //   return dto;
+  // }
+  // TotCapSummaryPayDto(dto: Tot_cap_SummaryDto) {
+  //   return dto;
+  // }
 
-  caisAccDto(dto: Cais_AccDto, IncomeTaxPan) {
+  caisAccDto(obj:Cais_AccDto, IncomeTaxPan) {
 
-    const val = Object.values(dto)
+    const val = Object.values(obj)
     const dataArray = val.map((caisAccpayload) => {
       const dat = caisAccpayload
       dat["CustomerPan"] = IncomeTaxPan;
@@ -61,26 +61,27 @@ export class AppService {
   //   return dto;
   // }
 
-  async addNew(dto: any) {
-    const Header = dto?.INProfileResponse?.Header;
-    const UserMessage = dto?.INProfileResponse?.UserMessage;
-    const CreditProfileHeader = dto?.INProfileResponse?.CreditProfileHeader;
-    const Current_Application = dto?.INProfileResponse?.Current_Application;
+  async addNew(rsp: any) {
+
+    console.log(rsp)
+    const Header = rsp?.INProfileResponse?.Header;
+    const UserMessage = rsp?.INProfileResponse?.UserMessage;
+    const CreditProfileHeader = rsp?.INProfileResponse?.CreditProfileHeader;
+    const Current_Application = rsp?.INProfileResponse?.Current_Application;
     const IncomeTaxPan = Current_Application?.Current_Application_Details?.Current_Applicant_Details?.IncomeTaxPan
 
-    const CAIS_Account = dto?.INProfileResponse?.CAIS_Account;
-    const Match_result = dto?.INProfileResponse?.Match_result;
-    const TotalCAPS_Summary = dto?.INProfileResponse?.TotalCAPS_Summary;
-    const CAPS = dto?.INProfileResponse?.CAPS;
-    const NonCreditCAPS = dto?.INProfileResponse?.NonCreditCAPS;
-    const SCORE = dto?.INProfileResponse?.SCORE;
+    const CAIS_Account = rsp?.INProfileResponse?.CAIS_Account;
+    const Match_result = rsp?.INProfileResponse?.Match_result;
+    const TotalCAPS_Summary = rsp?.INProfileResponse?.TotalCAPS_Summary;
+    const CAPS = rsp?.INProfileResponse?.CAPS;
+    const NonCreditCAPS = rsp?.INProfileResponse?.NonCreditCAPS;
+    const SCORE = rsp?.INProfileResponse?.SCORE;
 
-    const userPayload = this.Client(
-      {
-        ...Current_Application?.Current_Application_Details?.Current_Applicant_Details,
-        ...Current_Application?.Current_Application_Details?.Current_Other_Details,
-        ...Current_Application?.Current_Application_Details?.Current_Applicant_Address_Details,
-      });
+    const userPayload = {
+      ...Current_Application?.Current_Application_Details?.Current_Applicant_Details,
+      ...Current_Application?.Current_Application_Details?.Current_Other_Details,
+      ...Current_Application?.Current_Application_Details?.Current_Applicant_Address_Details,
+    };
 
 
     if (userPayload) {
@@ -96,7 +97,7 @@ export class AppService {
         });
       }
 
-      const headpayload = { CustomerPan: IncomeTaxPan, ...this.ClientHead(Header) }
+      const headpayload = { CustomerPan: IncomeTaxPan, ...Header }
       // console.log(headpayload)
       await this.prisma.header.create({
         data: headpayload
@@ -104,7 +105,7 @@ export class AppService {
 
       //////////////////////////////////
 
-      const credProfheadpayload = { CustomerPan: IncomeTaxPan, ...this.ClientcredProfHead(CreditProfileHeader) }
+      const credProfheadpayload = { CustomerPan: IncomeTaxPan, ...CreditProfileHeader }
 
       if (credProfheadpayload) {
         const found = await this.prisma.creditProfileHeader.findUnique({
@@ -122,7 +123,7 @@ export class AppService {
 
       //////////////////////////////////
 
-      const currAppDetailpay = { ApplicantPan: IncomeTaxPan, ...this.ClientCurrAppDetail(Current_Application?.Current_Application_Details) }
+      const currAppDetailpay = Current_Application?.Current_Application_Details
       // console.log(currAppDetailpay)
       await this.prisma.current_Application_Details.create({
         data: {
@@ -138,14 +139,14 @@ export class AppService {
       //////////////////////////////////////
 
       const caisAccObj = this.caisAccDto(CAIS_Account?.CAIS_Account_DETAILS, IncomeTaxPan)
-      // console.log(caisAccObj)
       caisAccObj.map(async (dataval) => {
-        console.log(dataval)
         const CaisAccountHist = dataval["CAIS_Account_History"]
         delete dataval["CAIS_Account_History"];
+        console.log("sdfsdafasf     ",dataval)
+
         const fond = await this.prisma.cAIS_Account.findUnique({
           where: {
-            Identification_Number: dataval.Identification_Number
+            Account_Number: dataval["Account_Number"]
           }
         })
         if (!fond) {
@@ -157,7 +158,7 @@ export class AppService {
             if (saved) {
 
               CaisAccountHist.map(async (hist) => {
-                hist["Acct_Number"] = dataval.Account_Number;
+                hist["Acct_Number"] = dataval["Account_Number"];
                 console.log(hist)
                 await this.prisma.cAIS_Account_History.create({
                   data: hist
@@ -177,7 +178,7 @@ export class AppService {
 
       })
 
-      /////////////////////////////////
+      ///////////////////////////////
 
       const CAIS_AccountPay = CAIS_Account?.CAIS_Summary?.Credit_Account
       console.log(CAIS_AccountPay)
@@ -261,7 +262,7 @@ export class AppService {
 
       /////////////////////////   CAPS  \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-      const CAPS_SummaryPay = { CustomerPan: IncomeTaxPan, ...this.CAPS_SummaryDTOFun(CAPS?.CAPS_Summary) }
+      const CAPS_SummaryPay = { CustomerPan: IncomeTaxPan, ...CAPS?.CAPS_Summary }
       const findCAPS_Summary = await this.prisma.cAPS_Summary.findUnique({
         where: {
           CustomerPan: IncomeTaxPan
@@ -280,38 +281,38 @@ export class AppService {
       // const CAPS_AccoutntPay = {...this.CAPS_App_DetDtofun(CAPS?.CAPS_Application_Details) }
       const CAPS_AccoutntObj = CAPS?.CAPS_Application_Details;
       console.log(CAPS_AccoutntObj)
-      CAPS_AccoutntObj.map(async(CAPS_AccoutntPay)=>{
+      CAPS_AccoutntObj.map(async (CAPS_AccoutntPay) => {
         delete CAPS_AccoutntPay["CAPS_Applicant_Details"]
         delete CAPS_AccoutntPay["CAPS_Other_Details"]
         delete CAPS_AccoutntPay["CAPS_Applicant_Address_Details"]
         delete CAPS_AccoutntPay["CAPS_Applicant_Additional_Address_Details"]
 
-        const CAPS_AccoutntPayData ={ CustomerPan: IncomeTaxPan, ...CAPS_AccoutntPay}
+        const CAPS_AccoutntPayData = { CustomerPan: IncomeTaxPan, ...CAPS_AccoutntPay }
         const findCAPS_AccoutntPay = await this.prisma.cAPS_Application_Details.findUnique({
-        where: {
-          Subscriber_code: CAPS_AccoutntPayData.Subscriber_code
+          where: {
+            Subscriber_code: CAPS_AccoutntPayData.Subscriber_code
+          }
+        })
+
+        if (!findCAPS_AccoutntPay) {
+
+          await this.prisma.cAPS_Application_Details.create({
+            data: CAPS_AccoutntPayData
+          });
+          console.log("Cap Account  added")
+
+        } else {
+          console.log("Cap Account Already  Exist")
         }
-      })
-
-      if (!findCAPS_AccoutntPay) {
-        
-        await this.prisma.cAPS_Application_Details.create({
-          data: CAPS_AccoutntPayData
-        });
-        console.log("Cap Account  added")
-
-      } else {
-        console.log("Cap Account Already  Exist")
-      }
 
       })
-      
-      
+
+
 
 
       //////////////////////////////////////////
 
-      const TotCapSummaryPay = { CustomerPan: IncomeTaxPan, ...this.TotCapSummaryPayDto(TotalCAPS_Summary) }
+      const TotCapSummaryPay = { CustomerPan: IncomeTaxPan, ...TotalCAPS_Summary }
       const findTotCapSumPay = await this.prisma.totalCAPS_Summary.findUnique({
         where: {
           CustomerPan: IncomeTaxPan
@@ -330,7 +331,7 @@ export class AppService {
 
       ///////////////////////////////////////////
 
-      const scorePay = { CustomerPan: IncomeTaxPan, ...this.scoreDto(SCORE) }
+      const scorePay = { CustomerPan: IncomeTaxPan, ...SCORE }
       // console.log(scorePay)
       const findscore = await this.prisma.score.findUnique({
         where: {
